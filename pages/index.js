@@ -6,17 +6,10 @@ import GitHubCorner from '../src/components/GitHubCorner'
 import React from 'react'; 
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Input from '../src/components/Input';
+import QuizContainer from '../src/components/QuizContainer';
+import Button from '../src/components/Button';
 
-export const QuizContainer = styled.div`
-width: 100%;
-max-width: 350px;
-padding-top: 45px;
-margin: auto 10%;
-@media screen and (max-width: 500px){
-  margin: auto;
-  padding: 15px;
-}
-`;
 
 
 export default function Home(){
@@ -28,9 +21,6 @@ return (
 
 
   <QuizBackground backgroundImage={db.bg}>
-    <Head>
-      Quiz de One Piece
-    </Head>
   <QuizContainer>
       <Widget>
       <Widget.Header>
@@ -45,16 +35,19 @@ return (
 }}
 class="form_nome_jogar"
 >
-      <input
-      onChange={function (infosDoEvento) {
+      <Input
+      name="nomeDoUsuario"
+      onChange={(infosDoEvento) => {
  setName(infosDoEvento.target.value);
       }}
-      placeholder="Digite seu nome" class="input_nome"/>
+      placeholder="Digite seu nome"
+      value={name}
+      />
 
 <br></br>
-<button type="submit" disabled={name.length === 0} class="botao_nome">
+<Button type="submit" disabled={name.length === 0} >
   <b>Vamos jogar, {name}!</b>
-</button>
+</Button>
 
       </form>
 
@@ -65,7 +58,9 @@ class="form_nome_jogar"
       <Widget.Content class="gif_chopper">
         <h1>Chopper mandou-lhe uma boa sorte! :D</h1>
 
-      <img src="https://i.pinimg.com/originals/ed/67/0a/ed670a8b6b14dce2f0f580a3409aa46d.gif"></img>
+      <img src="https://i.pinimg.com/originals/ed/67/0a/ed670a8b6b14dce2f0f580a3409aa46d.gif"
+      alt="Gif do chopper"
+      ></img>
       </Widget.Content>
     </Widget>
   </QuizContainer>

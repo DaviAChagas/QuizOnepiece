@@ -24,6 +24,7 @@ p{
 
 Widget.Content = styled.div`
 padding: 24px 32px 32px 32px;
+
 & > *:first-child{
   margin-top: 0;
 }
@@ -40,9 +41,35 @@ Widget.Header = styled.header`
 display: flex;
 justify-content: flex-start;
 align-items: center;
-padding: 18px 32px;
+padding: 15px 27.5px;
 background-color: ${({theme}) => theme.colors.primary};
 
 `;
+
+Widget.Topic = styled.a`
+
+outline: 0;
+text-decoration: none;
+color: ${({theme }) => theme.colors.contrastText};
+background-color: ${({ theme }) => theme.colors.alternative_color};
+padding: 10px 15px;
+margin-bottom: 8px;
+cursor: pointer;
+border-radius: ${({ theme}) => theme.borderRadius};
+
+transition: .3s;
+display: block;
+
+&:hover,
+&:focus {
+  opacity: .5;
+}
+`;
+
+
+
+
+
+
 
 export default Widget;

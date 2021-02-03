@@ -1,5 +1,5 @@
 {
-    "bg": "https://lh3.googleusercontent.com/tNVrDKCXCYWlNfXuxvMwHAtpL41trDvWra_0x0kKkyrOacq7RNwD7pOWKPB531IYcNRS8JSBPaG3jSbr83boYSZiAKpAsRvRxKS0dQDBeMecNdaIFScGBdza4bVHWJD3KChQk3lb0DbOZ5NaEkSYCr3hgOfwvL7zW4Lt2rfGYdhH9t7_RLn6sbG0HhYHMmL-nBc-NnSWofH9JkQyisqSqehN2Y6jW7PSWfu0wpQ-tovf_w-gkwpEzPyH0DckAzYZkRq3Vmhgdu7ZVichjb0-487bHk6DVzfoxK99is_uRoUT6inv_Co87S7drdtrFwNub582XiXwBSyKqEXNyxpHVQXJls52o3po4ArY-G-941r4XLwbuco63-XpHR_jOuFAxHugQrlMHO7AuMz0Q1xzk96XBg6A63MelOZICE8t3BiNzkdkL4XS88EznFBw6kdik1xMpRPYYaRCLpBC27DbyqMJiSuNhzFrGmklLHQjmoGognYmMPouQGwjRd3Jol_qFMNzF681HhkI-paAJcFD62ZeaRYAY-LD2cDGUM7sp5cbtdKKY4mrKO3aurn3U7Yq8YGi2ZJe8_6VrHcSLc5BnBgUmV9CQ2o_wBoUsHd0TzKC4OM-mxa3mxmFRqdjT2mlfVPSpUqFk665jbli1OD23miiRWfmVNcD1ZtMM51Z43xLzJXVZs3RT3CNA_8vsdo=w1183-h665-no?authuser=0",
+    "bg": "https://i1.wp.com/www.selectgame.com.br/wp-content/uploads/2019/07/One-Piece-Pirate-Warriors-4-Imagem-Topo-Wallpaper-Full-HD-1920x1080.jpg?fit=1920%2C1080&ssl=1",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
@@ -36,7 +36,8 @@
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "success": "#4CAF50",
+        "alternative_color": "rgb(240, 207, 10, 0.4)" 
       },
       "borderRadius": "4px"
     }
