@@ -1,28 +1,185 @@
 {
-    "bg": "https://i.gruposwhats.app/5e9e49c777586.jpg",
+    "bg": "https://i1.wp.com/www.selectgame.com.br/wp-content/uploads/2019/07/One-Piece-Pirate-Warriors-4-Imagem-Topo-Wallpaper-Full-HD-1920x1080.jpg?fit=1920%2C1080&ssl=1",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media4.giphy.com/media/kBw4Z8IWF5n8X8xbL6/200.gif",
+        "title": "Qual o nome do homem que matou Ace?",
+        "description": "Ele se sacrificou para salvar Luffy",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Kuzan (Aokiji)",
+          "Sakazuki (Akainu)",
+          "Borsalino (Kizaru)",
+          "Donquixote Doflamingo"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://criticalhits.com.br/wp-content/uploads/2020/07/Eiichiro-Oda.jpg",
+        "title": "Qual é o nome do criador de One Piece?",
+        "description": "Se não fosse ele, este quiz não existiria",
+        "answer": 3,
+        "alternatives": [
+           "Hiromu Arakawa",
+           "Masashi Kishimoto",
+           "Akira Toriyama",
+           "Eiichiro Oda"
+        ]
+      },
+      {
+        "image": "https://steamuserimages-a.akamaihd.net/ugc/957462736268837616/953C982AB097520FAA0E6A15A329C2ED80389920/",
+        "title": "Quantos mugiwaras são usuários de Akuma no Mi??",
+        "description": "Sempre é necessário salvá-los no mar",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "4",
+          "3",
+          "2",
+          "6"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/jjfrocwQkIopO/giphy.gif",
+        "title": "Qual era o disface de Rob Lucci?",
+        "description": "Homem com o ombro no pombo😎",
+        "answer": 2,
+        "alternatives": [
+          "Pirata",
+          "Engenheiro naval",
+          "Não tinha disfarce",
+          "Mágico"
+        ]
+      },
+      {
+        "image": "https://thumbs.gfycat.com/DecentDecimalKookaburra-size_restricted.gif",
+        "title": "Qual era a cor do cabelo do Barba Branca?",
+        "description": "A barba é um bigode?",
+        "answer": 3,
+        "alternatives": [
+          "Ruivo",
+          "Preto",
+          "Loiro",
+          "Não foi mostrado"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/tuCFp8rod0x3O/giphy.gif",
+        "title": "Luffy foi com quantos anos para o mar?",
+        "description": "Ele combinou isso com Ace",
+        "answer": 0,
+        "alternatives": [
+          "17 anos",
+          "14 anos",
+          "15 anos",
+          "18 anos"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/g6qPrPuD209Yk/giphy.gif?cid=ecf05e47251a8796823ebd34fad373520bdc6c26348279e8&rid=giphy.gif",
+        "title": "Zoro é conhecido pelo bando por...?",
+        "description": "Sanji e Nami sempre se preocupam",
+        "answer": 1,
+        "alternatives": [
+          "Ser sanguinário",
+          "Se perder do caminho",
+          "Ser o mais forte do bando",
+          "Ser atencioso"
+        ]
+      },
+      {
+        "image": "https://media2.giphy.com/media/uQkl6vj7juQiQ/giphy.gif?cid=ecf05e472c47b4627b1fb8cc8df08a72484868bb32107b38&rid=giphy.gif",
+        "title": "Após time-skip, Nami aprimora o que?",
+        "description": "Desconsidere o bastão",
+        "answer": 3,
+        "alternatives": [
+          "Seu haki da observação",
+          "Seu corpo, mais preparado para lutas",
+          "Suas habilidades estratégicas",
+          "Seus conhecimentos em climatologia"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/es24mS8ffa5tC/giphy.gif?cid=ecf05e47w5195c50t9t08y7mpopasexn08q0r7d523z30qik&rid=giphy.gif",
+        "title": "O pai de Usopp pertence/pertencia ao bando de quem?",
+        "description": "Nariz do Usopp é uma herança materna",
+        "answer": 2,
+        "alternatives": [
+          "Barba Branca",
+          "Barba Negra",
+          "Shanks",
+          "Gol D. Roger"
+        ]
+      },
+      {
+        "image": "https://media2.giphy.com/media/RuRd67S6IfDEI/giphy.gif?cid=ecf05e47j65m33qpxuh13ouf8qbzkvmy0hxdiyaokhlvhyff&rid=giphy.gif",
+        "title": "Sanji diz ter vivido no... em seu dois anos separado do bando",
+        "description": "Talvez ele tenha gostado um pouco",
+        "answer": 0,
+        "alternatives": [
+          "Inferno",
+          "Paraiso",
+          "Limbo"
+        ]
+      },
+      {
+        "image": "https://media2.giphy.com/media/26hitl5xWKMuo4XuM/200w.webp?cid=ecf05e47qw0lnssul6clckkfrie31j81w05d340q8j419d7k&rid=200w.webp",
+        "title": "Quem influenciou Chopper a virar pirata?",
+        "description": "O guaxinim do bando",
+        "answer": 2,
+        "alternatives": [
+          "Luffy",
+          "Gol D. Roger",
+          "Dr. Hiriluk",
+          "Dr. Kureha"
+        ]
+      },
+      {
+        "image": "https://media4.giphy.com/media/13SYnseWRwRSc8/giphy.gif",
+        "title": "Qual é o objetivo principal de Nico Robin?",
+        "description": "Já reparou no que ela imagina?",
+        "answer": 3,
+        "alternatives": [
+          "Vingar sua ilha",
+          "Ajudar Luffy a virar o rei dos piratas",
+          "Encontrar sua mãe",
+          "Entender o século em branco"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/b3/99/86/b39986bdb32421984ca7b99e9a9505e5.gif",
+        "title": "Qual a primeira coisa que franky faz, ao chegar na Ilha dos Homens Peixe?",
+        "description": "SUPEEEEEEEER!!!!",
+        "answer": 0,
+        "alternatives": [
+          "Encontrar o irmão de seu antigo mestre",
+          "Aprender a revestir o Sunny",
+          "Procurar o Sunny",
+          "Ir ver as sereias"
+        ]
+      },
+      {
+        "image": "https://media2.giphy.com/media/OlM1nq85xO6Fq/giphy.gif?cid=ecf05e47j1mfiumdpad7313i8huw76zq4xfk5ny61ridrgl9&rid=giphy.gif",
+        "title": "Com quem Brook quer se reencontrar?",
+        "description": "Pena que ele não tenha olhos, YOHOHOHO",
+        "answer": 1,
+        "alternatives": [
+          "Com sua família",
+          "Laboon",
+          "Com seu ex-capitão",
+          "Big Mom"
+        ]
+      },
+      {
+        "image": "https://78.media.tumblr.com/tumblr_m77v3o7DTh1qcsesho2_400.gif",
+        "title": "Qual o nome do estilo de luta de Jinbe?",
+        "description": "Um homem bonito, segundo Robin",
+        "answer": 2,
+        "alternatives": [
+          "Muay thai dos Homens Peixe",
+          "Kung fudos Homens Peixe",
+          "Karatê dos Homens Peixe",
+          "Nado dos Homens Peixe"
         ]
       }
     ],
