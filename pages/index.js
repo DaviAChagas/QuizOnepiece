@@ -60,13 +60,7 @@ class="form_nome_jogar"
 
       <img src="https://i.pinimg.com/originals/ed/67/0a/ed670a8b6b14dce2f0f580a3409aa46d.gif"
       alt="Gif do chopper"
-      style={{
-        width: '90%',
-        height: '90%',
-        objectFit: 'cover',
-      }}
-    />
-      
+      ></img>
       </Widget.Content>
     </Widget>
   </QuizContainer>

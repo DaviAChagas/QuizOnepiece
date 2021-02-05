@@ -27,6 +27,8 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
   }
  .gif_chopper img{
+   height: 80%;
+   width: 90%;
    margin-top: 3.8px;
    margin-bottom: 6px;
    border-radius: 5px;
@@ -53,7 +55,7 @@ export default function App({ Component, pageProps }) {
     <link rel="shortcut icon" href="https://i.pinimg.com/originals/fa/b6/39/fab63979311738b5fe308cbd6dffb11f.png" type="image/x-icon"/>
 
     <meta property="og:title" content="Quiz de One Piece" />
-    <meta property="og:description" content="Este site foi desenvolvido como um treinamento de React.js, Next.js, JavaScript e CSS3, além de ser o meu primeiro repositório no GitHub e meu primeiro contato com Git, ainda não entendendo tão bem o que cada coisa faz e seus comandos. No entanto, esperamos que seja um quiz interessante para os fãs da obra, e que tenham uma ótima experiência com a interface! :D" />
+    <meta property="og:description" content="Este site desenvolvido como um treinamento de React.js, Next.js, JavaScript e CSS3. No entanto, esperamos que seja um quiz interessante para os fãs da obra, e que tenham uma ótima experiência com a interface! :D" />
     <meta property="og:image" content=" https://i1.wp.com/www.selectgame.com.br/wp-content/uploads/2019/07/One-Piece-Pirate-Warriors-4-Imagem-Topo-Wallpaper-Full-HD-1920x1080.jpg?fit=1920%2C1080&ssl=1" />
     
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
