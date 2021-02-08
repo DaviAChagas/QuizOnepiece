@@ -1,7 +1,7 @@
 {
     "bg": "https://i1.wp.com/www.selectgame.com.br/wp-content/uploads/2019/07/One-Piece-Pirate-Warriors-4-Imagem-Topo-Wallpaper-Full-HD-1920x1080.jpg?fit=1920%2C1080&ssl=1",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "One Piece",
+    "description": "Será que você tem todo o conhecimento necessário para se tornar o rei dos piratas?",
     "questions": [
       {
         "image": "https://media4.giphy.com/media/kBw4Z8IWF5n8X8xbL6/200.gif",
@@ -148,7 +148,7 @@
       },
       {
         "image": "https://i.pinimg.com/originals/b3/99/86/b39986bdb32421984ca7b99e9a9505e5.gif",
-        "title": "Qual a primeira coisa que franky faz, ao chegar na Ilha dos Homens Peixe?",
+        "title": "Qual a primeira coisa que franky faz, ao chegar na Ilha dos Homens-Peixe?",
         "description": "SUPEEEEEEEER!!!!",
         "answer": 0,
         "alternatives": [
@@ -176,10 +176,10 @@
         "description": "Um homem bonito, segundo Robin",
         "answer": 2,
         "alternatives": [
-          "Muay thai dos Homens Peixe",
-          "Kung fudos Homens Peixe",
-          "Karatê dos Homens Peixe",
-          "Nado dos Homens Peixe"
+          "Muay thai dos Homens-Peixe",
+          "Kung fu dos Homens-Peixe",
+          "Karatê dos Homens-Peixe",
+          "Nado dos Homens-Peixe"
         ]
       }
     ],

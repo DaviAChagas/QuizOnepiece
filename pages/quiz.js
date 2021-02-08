@@ -6,25 +6,54 @@ import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
 
 
-function LoadingWidget(){
+function LoadingWidgetQuiz(){
 return(
   <Widget>
     <Widget.Header>
-      Carregando...
+      <h2>Carregando o quiz...</h2>
     </Widget.Header>
 
     <Widget.Content>
-      [Deafio do Loading]
+<img src="https://media1.giphy.com/media/AyCbZVuOqD5MA/source.gif" 
+  style={{
+    width: '100%',
+    height: '230px',
+    objectFit: 'cover',
+  }}
+/>
     </Widget.Content>
   </Widget>
 );
 
 }
 
+function LoadingWidgetResult(){
+  return(
+    <Widget>
+      <Widget.Header>
+        <h2>Carregando o resultado...</h2>
+      </Widget.Header>
+  
+      <Widget.Content>
+  <img src="https://media3.giphy.com/media/LJMPfwHLEljwY/giphy.gif?cid=ecf05e47w3ljn3aryxa7b8n5jc7xushmxetz4b822njiefs9&rid=giphy.gif" 
+    style={{
+      width: '100%',
+      height: '280px',
+      objectFit: 'cover',
+    }}
+  />
+      </Widget.Content>
+    </Widget>
+  );
+  
+  }
+
 function QuestionWidget({
   question,
    totalQuestions,
-  questionIndex,}){
+  questionIndex,
+  onSubimit,
+}){
     const questionId = `question__${questionIndex}`;
   return(
     <Widget>
@@ -38,13 +67,13 @@ function QuestionWidget({
 
 <img
   alt="Descrição"
-  styled={{
+  style={{
     width: '100%',
     height: '150px',
     objectFit: 'cover',
     
   }}
-  src="https://placehold.it/400x150"
+  src={question.image}
   />
 <Widget.Content>
 <h2>
@@ -56,6 +85,7 @@ function QuestionWidget({
 
 <form onSubmit={(infosDoEvento) => {
 infosDoEvento.preventDefault();
+onSubimit();
 }}
 >
 
@@ -80,8 +110,6 @@ infosDoEvento.preventDefault();
   )
 })}
 
- 
-
 
 <Button type="submit">
   Confirmar
@@ -95,13 +123,14 @@ infosDoEvento.preventDefault();
 
 const screenStates = {
 QUIZ: 'QUIZ',
-LOADING: 'LOADING',
+LOADING_QUIZ: 'LOADING_QUIZ',
+LOADING_RESULT: 'LOADING_RESULT',
 RESULT: 'RESULT',
 
 };
 
 export default function QuizPage() {
-  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
+  const [screenState, setScreenState] = React.useState(screenStates.LOADING_QUIZ);
   const totalQuestions  = db.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
@@ -109,10 +138,21 @@ export default function QuizPage() {
 
   React.useEffect(() =>{
     setTimeout(() => {
-      setScreenState(screenStates.QUIZ );
-    }, 1 * 1000);
+      setScreenState(screenStates.QUIZ);
+    }, 1 * 1750);
   }, []);
 
+  function handleSubmit(){
+    const nextQuestion = questionIndex + 1;
+    if(nextQuestion < totalQuestions){
+      setCurrentQuestion(questionIndex + 1);
+    }
+    else{
+          setScreenState(screenStates.LOADING_RESULT);
+          setTimeout(() => {
+            setScreenState(screenStates.RESULT);
+          }, 1 * 1750);
+  }}
 
   return (
 
@@ -124,12 +164,22 @@ export default function QuizPage() {
 question={question}
 totalQuestions={totalQuestions}
 questionIndex={questionIndex}
+onSubimit={handleSubmit}
   />
 )}
 
-{screenState === screenStates.LOADING && <LoadingWidget />}
+{screenState === screenStates.LOADING_QUIZ && <LoadingWidgetQuiz />}
+{screenState === screenStates.LOADING_RESULT && <LoadingWidgetResult />}
 
-{screenState === screenStates.RESULT && <div>Você acertou x questões, foda-se</div>}
+{screenState === screenStates.RESULT &&
+ <Widget>
+   <Widget.Header>
+    <h3>Seu resultado:</h3> 
+   </Widget.Header>
+  <Widget.Content>
+    Você acertou X questões
+  </Widget.Content>
+   </Widget>}
 
 </QuizContainer>
    </QuizBackground>

@@ -24,10 +24,10 @@ return (
   <QuizContainer>
       <Widget>
       <Widget.Header>
-        <h1>One Piece</h1>
+        <h1>{db.title}</h1>
       </Widget.Header>
       <Widget.Content>
-        <p>Será que você tem todo o conhecimento necessário para se tornar o rei dos piratas?</p>
+        <p>{db.description}</p>
 
 <form onSubmit={function (infosDoEvento) {
   infosDoEvento.preventDefault();
