@@ -40,6 +40,7 @@ class="form_nome_jogar"
       onChange={(infosDoEvento) => {
  setName(infosDoEvento.target.value);
       }}
+      autocomplete="off"
       placeholder="Digite seu nome"
       value={name}
       />

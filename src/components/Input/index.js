@@ -16,11 +16,12 @@ border-radius: 5px;
 
 `
 
-export default function Input({onChange, placeholder, ...props}){
+export default function Input({onChange, placeholder,autocomplete, ...props}){
   return (
 <div>
     <InputBase onChange = {onChange}
         placeholder={placeholder}
+        autoComplete={autocomplete}
    {...props}
     />
 </div>
@@ -37,5 +38,6 @@ Input.propTypes = {
 placeholder: PropTypes.string.isRequired,
 name: PropTypes.string.isRequired,
 value: PropTypes.string.isRequired,
+autoComplete: PropTypes.string.isRequired,
 
 };
