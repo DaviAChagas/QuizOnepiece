@@ -186,6 +186,12 @@
     "external": [
       ""
     ],
+    "Final" : [
+        {
+          "message": "Obrigado por jogar!",
+          "gif": "https://media2.giphy.com/media/8pzzC73HBeKmQ/giphy.gif?cid=ecf05e47e1pewebktvg1ekvw8rb93v723zx0pv8bynzbi5e5&rid=giphy.gif"
+          }
+    ],
     "theme": {
       "colors": {
         "primary": "rgb(94%, 81%, 4%)",

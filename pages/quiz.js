@@ -4,6 +4,7 @@ import QuizBackground from '../src/components/QuizBackground'
 import React from 'react';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
+import AlternativesForm from '../src/components/AlternativeForm';
 
 
 function LoadingWidgetQuiz(){
@@ -49,6 +50,7 @@ function LoadingWidgetResult(){
   }
 
   function ResultsWidget({ results }){
+
     return(
       <Widget>
         <Widget.Header>
@@ -59,12 +61,13 @@ function LoadingWidgetResult(){
 <p>
   Quantidade de acertos: {results.reduce((somatoriaAtual, resultAtual) => {
     const isAcerto = resultAtual === true;
+    var teste;
+
     if (isAcerto){
       return somatoriaAtual + 1;
-
+      
     }
     return somatoriaAtual;
-
   }, 0
   )} questões
   </p>
@@ -83,12 +86,45 @@ function LoadingWidgetResult(){
                 'Errada'}
               </li>
             ))
-    
+  
     }
+
     </ul>
+
         </Widget.Content>
       </Widget>
   )}
+
+  
+  function MessageWidget(){
+ const acertosIndex = 0;
+ 
+    const messages = db.Final[acertosIndex];
+
+    return(
+<Widget>
+  <Widget.Header>
+
+  {messages.message}
+
+  </Widget.Header>
+  <Widget.Content>
+
+<img
+alt="Descrição"
+style={{
+width: '100%',
+height: '100%',
+objectFit: 'cover',
+
+}}
+src={messages.gif}
+/>
+  </Widget.Content>
+</Widget>
+    )
+  }
+
 
 function QuestionWidget({
   question,
@@ -131,7 +167,7 @@ function QuestionWidget({
   {question.description}
 </p>
 
-<form onSubmit={(infosDoEvento) => {
+<AlternativesForm onSubmit={(infosDoEvento) => {
 infosDoEvento.preventDefault();
 setIsQuestionSubmited(true);
 setTimeout(() =>{
@@ -139,18 +175,22 @@ setTimeout(() =>{
   onSubimit();
   setIsQuestionSubmited(false);
   setSelectedAlternative(undefined);
-}, 3 * 1080 )
+}, 3 * 500 )
 }}
 >
 
 {question.alternatives.map((alternative, alternativeIndex) => {
   const alternativeId = `alternative__${alternativeIndex}`;
+  const AlternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
+  const isSelected = selectedAlternative === alternativeIndex;
   return (
 
     <Widget.Topic
     as="label"
     key={alternativeId}
      htmlFor={alternativeId}
+     data-selected={isSelected}
+     data-status={isQuestionSubmited && AlternativeStatus}
      >
       <input
       style={{display: 'none'}}
@@ -169,9 +209,9 @@ setTimeout(() =>{
 <Button type="submit" disabled={!hasAlternativeSelected}>
   Confirmar
        </Button>
-{isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-{isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
-</form>
+{isQuestionSubmited && isCorrect}
+{isQuestionSubmited && !isCorrect}
+</AlternativesForm>
    </Widget.Content>
 </Widget>
   );
@@ -238,7 +278,8 @@ addResults={addResults}
 {screenState === screenStates.LOADING_QUIZ && <LoadingWidgetQuiz />}
 {screenState === screenStates.LOADING_RESULT && <LoadingWidgetResult />}
 
-{screenState === screenStates.RESULT && <ResultsWidget results={results}/>
+{screenState === screenStates.RESULT && <ResultsWidget results={results}/>}
+{screenState === screenStates.RESULT && <MessageWidget results={results}/>
 }
 
 </QuizContainer>
