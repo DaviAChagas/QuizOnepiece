@@ -8,6 +8,7 @@
     "eslint:init": "eslint --init"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001185",
     "eslint": "^7.18.0",
     "next": "latest",
     "prop-types": "^15.7.2",

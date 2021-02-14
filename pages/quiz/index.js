@@ -1,10 +1,10 @@
-import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizBackground from '../src/components/QuizBackground'
+import db from '../../db.json';
+import Widget from '../../src/components/Widget'
+import QuizBackground from '../../src/components/QuizBackground'
 import React from 'react';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativeForm';
+import QuizContainer from '../../src/components/QuizContainer';
+import Button from '../../src/components/Button';
+import AlternativesForm from '../../src/components/AlternativeForm';
 
 
 function LoadingWidgetQuiz(){
@@ -167,10 +167,11 @@ function QuestionWidget({
   {question.description}
 </p>
 
-<AlternativesForm onSubmit={(infosDoEvento) => {
+<AlternativesForm  onSubmit={(infosDoEvento) => {
 infosDoEvento.preventDefault();
 setIsQuestionSubmited(true);
 setTimeout(() =>{
+
   addResults(isCorrect);
   onSubimit();
   setIsQuestionSubmited(false);
